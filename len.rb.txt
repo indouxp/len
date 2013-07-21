@@ -49,3 +49,19 @@ indou@cf-t8:~/work/rspec_lesson/len$
   508  git remote add origin git@github.com:indouxp/len.git
   509  git push -u origin master
 
+●
+indou@cf-t8:~/work/rspec_lesson/len$ git checkout master
+Switched to branch 'master'
+indou@cf-t8:~/work/rspec_lesson/len$ git merge 1st
+Updating acd1f2d..e08d192
+Fast-forward
+ len.rb      | 17 +++++++++++++++++
+ len.rb.txt  | 51 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ len_spec.rb | 41 +++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 109 insertions(+)
+ create mode 100644 len.rb.txt
+indou@cf-t8:~/work/rspec_lesson/len$ 
+
+git push
+
+
