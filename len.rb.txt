@@ -1,0 +1,46 @@
+~/work/rspec_lesson/len
+
+http://d.hatena.ne.jp/t-wada/20100228/p1
+
+●rspecと、class作成
+indou@cf-t8:~/work/rspec_lesson/len$ cat len_spec.rb 
+# coding:utf-8
+require "./len"
+
+describe Len do
+end
+indou@cf-t8:~/work/rspec_lesson/len$ cat len.rb 
+# coding:utf-8
+class Len
+end
+indou@cf-t8:~/work/rspec_lesson/len$ 
+
+●git
+indou@cf-t8:~/work/rspec_lesson/len$ git add len_spec.rb len.rb
+indou@cf-t8:~/work/rspec_lesson/len$ git status
+# On branch master
+#
+# 最初のコミット
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+# 新規ファイル: len.rb
+# 新規ファイル: len_spec.rb
+#
+indou@cf-t8:~/work/rspec_lesson/len$ git commit -m "initial"
+[master (root-commit) acd1f2d] initial
+ 2 files changed, 8 insertions(+)
+ create mode 100644 len.rb
+ create mode 100644 len_spec.rb
+indou@cf-t8:~/work/rspec_lesson/len$ git checkout -b 1st
+Switched to a new branch '1st'
+indou@cf-t8:~/work/rspec_lesson/len$ 
+
+●RSpec
+indou@cf-t8:~/work/rspec_lesson/len$ rspec -fs len_spec.rb 
+No examples found.
+
+Finished in 0.00008 seconds
+0 examples, 0 failures
+indou@cf-t8:~/work/rspec_lesson/len$
